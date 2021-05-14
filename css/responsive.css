@@ -1,0 +1,130 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.design{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shake 5s linear infinite;
+    animation-direction: alternate;
+    margin-top: -20px !important;
+}
+@keyframes shake{
+    0%{
+        left: 49%;
+
+    }
+    50%{
+        top: 49%;
+
+    }
+    75%{
+        left: 51%;
+
+    }
+    100%{
+        top: 51%;
+    }
+
+}
+h1{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 50px !important;
+    color: #ffffff;
+    text-shadow: -7px 7px rgb(0 0 0 / 75%);
+    position: relative;
+}
+h1:before{
+    content: '';
+    position: absolute;
+    left: -26px !important;
+    top: -115px !important;
+    width: 170px;
+    height: 80px !important;
+    border-left: 10px solid #dddddd;
+    border-radius: 106px;
+    background: transparent;
+    transform: rotate(315deg);
+}
+.bg-design{
+    background-image: url(../img/lamp2.png);
+    min-height: 130px !important;
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 150px !important;
+    margin-top: -26px !important;
+    margin-bottom: 40px;
+    animation: lamp 30s linear infinite;
+}
+@keyframes lamp{
+    0%{
+        background-position: -100px;
+    }
+    100%{
+        background-position: 1600px;
+    }
+}
+
+.mosque{
+    background-image: url(../img/mosqe.png);
+    min-height: 150px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 300px;
+    position: absolute;
+    animation: mosque 30s linear infinite;
+    width: 100%;
+    left: 0;
+    bottom: -2px !important;
+    margin-bottom: 2px;
+}
+.mosque:before{
+    content: '';
+    background-image: url(../img/mosqe.png);
+    min-height: 250px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 650px;
+    position: absolute;
+    animation: mosque 80s linear infinite;
+    animation-direction: reverse;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 60%;
+}
+@keyframes mosque{
+    0%{
+        background-position: -100px;
+    }
+    100%{
+        background-position: 1600px;
+    }
+}
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 0px !important;
+}
+
+  
+}
